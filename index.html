@@ -5,64 +5,173 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>MedSurgical</title>
+    <title>MedSurgical - Equipamentos Médicos</title>
 </head>
 
 <body>
 
-    <h1>Catálogo de Produtos</h1>
+    <header>
+        <h1>MedSurgical</h1>
 
-    <p>
-        Encontre equipamentos médicos e acessórios para diferentes necessidades.
-    </p>
+        <p>
+            Equipamentos médicos e acessórios para diferentes necessidades
+            hospitalares e cirúrgicas.
+        </p>
+    </header>
 
-    <h2>Principais categorias</h2>
 
-    <ul>
-        <li>Equipamentos de Diagnóstico</li>
-        <li>Equipamentos de Tratamento</li>
-        <li>Acessórios Médicos</li>
-    </ul>
+    <main>
 
-    <h2>Produtos em destaque</h2>
+        <section>
+            <h2>Principais categorias</h2>
 
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Produto</th>
-                <th>Preço</th>
-            </tr>
-        </thead>
+            <ul>
+                <li>Equipamentos de Diagnóstico</li>
+                <li>Equipamentos de Tratamento</li>
+                <li>Acessórios Médicos</li>
+            </ul>
+        </section>
 
-        <tbody>
-            <tr>
-                <td>Bisturi</td>
-                <td>R$ 3.500,00</td>
-            </tr>
 
-            <tr>
-                <td>Scalpel</td>
-                <td>R$ 2.800,00</td>
-            </tr>
-        </tbody>
-    </table>
+        <section>
+            <h2>Produtos em destaque</h2>
 
-    <h2>Fonte de referência</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
 
-    <a
-        href="https://www.bisturi.com.br/"
-        target="_blank"
-        rel="noopener noreferrer"
-    >
-        Conheça mais sobre bisturis
-    </a>
+                <tbody>
+                    <tr>
+                        <td>Bisturi</td>
+                        <td>R$ 3.500,00</td>
+                    </tr>
 
-    <br><br>
+                    <tr>
+                        <td>Scalpel</td>
+                        <td>R$ 2.800,00</td>
+                    </tr>
+                </tbody>
+            </table>
 
-    <img
-        src="assets/images/medcirurgical.jpg"
-        alt="Equipamentos médicos de cirurgia"
-    >
+            <br>
+
+            <img
+                src="assets/images/medcirurgical.jpg"
+                alt="Equipamentos médicos de cirurgia"
+            >
+        </section>
+
+
+        <section>
+            <h2>Solicitação de orçamento</h2>
+
+            <form>
+
+                <fieldset>
+
+                    <legend>Solicite um orçamento</legend>
+
+                    <div>
+                        <label for="nome">Nome:</label>
+
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            required
+                        >
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label for="email">E-mail:</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                        >
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label for="telefone">Telefone:</label>
+
+                        <input
+                            type="tel"
+                            id="telefone"
+                            name="telefone"
+                            pattern="[0-9]{10,11}"
+                            placeholder="83999999999"
+                        >
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label for="quantidade">Quantidade de equipamentos:</label>
+
+                        <input
+                            type="number"
+                            id="quantidade"
+                            name="quantidade"
+                            min="1"
+                            max="100"
+                        >
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label for="mensagem">Equipamentos de interesse:</label>
+
+                        <textarea
+                            id="mensagem"
+                            name="mensagem"
+                            rows="5"
+                            cols="40"
+                        ></textarea>
+                    </div>
+
+                    <br>
+
+                    <button type="submit">
+                        Solicitar orçamento
+                    </button>
+
+                </fieldset>
+
+            </form>
+        </section>
+
+
+        <section>
+            <h2>Fonte de referência</h2>
+
+            <a
+                href="https://www.bisturi.com.br/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Conheça mais sobre equipamentos médicos
+            </a>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>
+            MedSurgical - Equipamentos Médicos
+        </p>
+    </footer>
 
 </body>
 
