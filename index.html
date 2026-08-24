@@ -5,20 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>MedSurgical - Equipamentos Médicos</title>
+    <title>MedSurgical</title>
 </head>
 
 <body>
 
     <header>
-        <h1>MedSurgical</h1>
+        <h1>Catálogo de Produtos</h1>
 
         <p>
-            Equipamentos médicos e acessórios para diferentes necessidades
-            hospitalares e cirúrgicas.
+            Encontre equipamentos médicos e acessórios para diferentes necessidades.
         </p>
     </header>
-
 
     <main>
 
@@ -31,7 +29,6 @@
                 <li>Acessórios Médicos</li>
             </ul>
         </section>
-
 
         <section>
             <h2>Produtos em destaque</h2>
@@ -57,120 +54,106 @@
                 </tbody>
             </table>
 
-            <br>
-
             <img
                 src="assets/images/medcirurgical.jpg"
                 alt="Equipamentos médicos de cirurgia"
             >
+
+            <p>
+                <a
+                    href="https://www.bisturi.com.br/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Conheça mais sobre bisturis
+                </a>
+            </p>
         </section>
 
-
         <section>
-            <h2>Solicitação de orçamento</h2>
+            <h2>Avalie um produto</h2>
 
             <form>
 
                 <fieldset>
+                    <legend>Informações da avaliação</legend>
 
-                    <legend>Solicite um orçamento</legend>
-
-                    <div>
+                    <p>
                         <label for="nome">Nome:</label>
-
                         <input
                             type="text"
                             id="nome"
                             name="nome"
                             required
                         >
-                    </div>
+                    </p>
 
-                    <br>
-
-                    <div>
+                    <p>
                         <label for="email">E-mail:</label>
-
                         <input
                             type="email"
                             id="email"
                             name="email"
                             required
                         >
-                    </div>
+                    </p>
 
-                    <br>
-
-                    <div>
+                    <p>
                         <label for="telefone">Telefone:</label>
-
                         <input
                             type="tel"
                             id="telefone"
                             name="telefone"
                             pattern="[0-9]{10,11}"
-                            placeholder="83999999999"
+                            placeholder="82999999999"
                         >
-                    </div>
+                    </p>
 
-                    <br>
+                    <p>
+                        <label for="produto">Produto:</label>
 
-                    <div>
-                        <label for="quantidade">Quantidade de equipamentos:</label>
+                        <select id="produto" name="produto" required>
+                            <option value="">Selecione um produto</option>
+                            <option value="bisturi">Bisturi</option>
+                            <option value="scalpel">Scalpel</option>
+                            <option value="diagnostico">Equipamento de diagnóstico</option>
+                            <option value="tratamento">Equipamento de tratamento</option>
+                        </select>
+                    </p>
 
+                    <p>
+                        <label for="nota">Nota do produto (1 a 5):</label>
                         <input
                             type="number"
-                            id="quantidade"
-                            name="quantidade"
+                            id="nota"
+                            name="nota"
                             min="1"
-                            max="100"
+                            max="5"
+                            required
                         >
-                    </div>
+                    </p>
 
-                    <br>
-
-                    <div>
-                        <label for="mensagem">Equipamentos de interesse:</label>
-
+                    <p>
+                        <label for="comentario">Comentário:</label>
                         <textarea
-                            id="mensagem"
-                            name="mensagem"
+                            id="comentario"
+                            name="comentario"
                             rows="5"
                             cols="40"
                         ></textarea>
-                    </div>
-
-                    <br>
-
-                    <button type="submit">
-                        Solicitar orçamento
-                    </button>
+                    </p>
 
                 </fieldset>
+
+                <button type="submit">Enviar avaliação</button>
 
             </form>
         </section>
 
-
-        <section>
-            <h2>Fonte de referência</h2>
-
-            <a
-                href="https://www.bisturi.com.br/"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Conheça mais sobre equipamentos médicos
-            </a>
-        </section>
-
     </main>
 
-
     <footer>
-        <p>
-            MedSurgical - Equipamentos Médicos
-        </p>
+        <p>&copy; 2026 MedSurgical - Catálogo de Produtos Médicos</p>
     </footer>
 
 </body>
