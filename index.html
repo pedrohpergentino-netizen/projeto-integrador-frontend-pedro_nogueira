@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>MedSurgical</title>
+
+    <!-- Arquivo CSS da Aula 5 -->
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body>
@@ -17,6 +20,47 @@
         <p>
             Encontre equipamentos médicos e acessórios para diferentes necessidades.
         </p>
+
+        <!-- Logotipo da MedSurgical criado com SVG inline -->
+        <svg
+            viewBox="0 0 100 100"
+            width="80"
+            height="80"
+            role="img"
+            aria-labelledby="titulo-logo"
+        >
+            <title id="titulo-logo">Logotipo da MedSurgical</title>
+
+            <circle
+                cx="50"
+                cy="50"
+                r="43"
+                fill="#1677A8"
+            />
+
+            <rect
+                x="42"
+                y="20"
+                width="16"
+                height="60"
+                rx="3"
+                fill="#FFFFFF"
+            />
+
+            <rect
+                x="20"
+                y="42"
+                width="60"
+                height="16"
+                rx="3"
+                fill="#FFFFFF"
+            />
+        </svg>
+
+        <!--
+            Teste de responsividade: ao redimensionar a janela do navegador,
+            o SVG mantém sua nitidez por ser um gráfico vetorial.
+        -->
     </header>
 
     <main>
@@ -29,6 +73,23 @@
                 <li>Equipamentos de Tratamento</li>
                 <li>Acessórios Médicos</li>
             </ul>
+        </section>
+
+        <!-- Seção adicionada na Aula 5 -->
+        <section>
+            <h2>Gráfico de categorias de produtos</h2>
+
+            <p>
+                Veja uma representação da quantidade de produtos
+                em cada categoria da MedSurgical.
+            </p>
+
+            <canvas id="graficoProdutos" width="600" height="350">
+                Gráfico de produtos por categoria:
+                Equipamentos de Diagnóstico: 8 produtos.
+                Equipamentos de Tratamento: 5 produtos.
+                Acessórios Médicos: 3 produtos.
+            </canvas>
         </section>
 
         <section>
@@ -201,6 +262,9 @@
     <footer>
         <p>&copy; 2026 MedSurgical - Catálogo de Produtos Médicos</p>
     </footer>
+
+    <!-- Arquivo JavaScript da Aula 5 -->
+    <script src="js/graficos.js" defer></script>
 
 </body>
 
